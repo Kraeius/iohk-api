@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-cli": "cypress open"
+    "cypress-cli": "cypress open",
+    "cypress-headless": "cypress run --headless -b chrome",
+    "eslint": "eslint cypress",
+    "esling-fix": "eslint cypress --fix"
   },
   "repository": {
     "type": "git",
@@ -13,6 +16,11 @@
   },
   "author": "",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run eslint-fix"
+    }
+  },
   "bugs": {
     "url": "https://github.com/Kraeius/iohk-api/issues"
   },
