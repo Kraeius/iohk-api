@@ -24,7 +24,7 @@ function postResultCheck(urlPath, statusCode, subjectKey) {
     body: {
       subjects: [
         '919e8a1922aaa764b1d66407c6f62244e77081215f385b60a62091494861707079436f696e',
-        '2048c7e09308f9138cef8f1a81733b72e601d016eea5eef759ff2933416d617a696e67436f696e',
+        '2048c7e09308f9138cef8f1a81733b72e601d016eea5eef759ff2933416d617a696e67436f696e', // A more modular approach can be added like getting each subjects from subject.json and use via combinations
       ],
       properties: [subjectKey], // More than one keys also need to be sent for an extensive tests
     },

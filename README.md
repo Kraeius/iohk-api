@@ -12,8 +12,10 @@ To open the cypress UI use "yarn cypress-cli"
 To run the test headlessly, use "yarn cypress-headless"
 
 GitHub Actions
+
 It's added to be triggered on every push and pull_request
 It also has the cron job to run at 9pm each night
+It's possible to run it manually as well
 
 Bugs
 
