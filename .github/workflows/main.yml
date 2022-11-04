@@ -1,11 +1,12 @@
 name: IOHK Metadata Tests
 
 on:
+  [workflow_dispatch]
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  schedule: # At 11:00 on every day-of-week from Monday through Friday
+  schedule: # At 21:00 on every day
     - cron: '0 21 * * 0-6'
 
 jobs:

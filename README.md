@@ -11,6 +11,10 @@ Running Tests
 To open the cypress UI use "yarn cypress-cli"
 To run the test headlessly, use "yarn cypress-headless"
 
+GitHub Actions
+It's added to be triggered on every push and pull_request
+It also has the cron job to run at 9pm each night
+
 Bugs
 
 It's kind of hard to know what is really required on a response but I assumed that what we got was actually what we expected on GET responses. For POST, we have a thing or two;
