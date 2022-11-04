@@ -1,7 +1,8 @@
 name: IOHK Metadata Tests
 
 on:
-  [workflow_dispatch]
+  workflow_dispatch:
+    branches: [ main ]
   push:
     branches: [ main ]
   pull_request:
